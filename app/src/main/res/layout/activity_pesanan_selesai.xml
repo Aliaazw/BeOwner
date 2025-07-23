@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PesananSelesaiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_ceklis"
+            app:tint="@color/primary_blue"
+            android:contentDescription="@string/pesanan_berhasil_title"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pesanan_berhasil_title"
+            android:textColor="@color/dark_blue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pesanan_berhasil_message"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnKembaliKeDashboard" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kembali_ke_dashboard_button_text"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary_blue"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:textSize="18sp"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

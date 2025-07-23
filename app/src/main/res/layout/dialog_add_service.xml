@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etServiceNameDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Layanan (contoh: Cuci Kiloan)"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etServicePriceDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga Per Unit (contoh: 8000)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etServiceUnitDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unit (contoh: kg, pcs, m)"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

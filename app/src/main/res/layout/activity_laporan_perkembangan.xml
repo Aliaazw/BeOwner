@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LaporanPerkembanganActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_blue"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/white"
+            android:contentDescription="@string/back_arrow_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/laporan_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/backArrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/tvFilterDropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alia"
+            android:drawableEnd="@drawable/ic_dropdown_arrow" android:drawablePadding="4dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout style="@style/LaporanSummaryRowStyle" android:layout_marginBottom="16dp">
+                <ImageView style="@style/LaporanSummaryIconStyle" android:src="@drawable/ic_money_balance" android:contentDescription="@string/saldo_kas_icon_desc"/>
+                <TextView style="@style/LaporanSummaryLabelStyle" android:text="@string/saldo_kas"/>
+                <TextView android:id="@+id/tvSaldoKas" style="@style/LaporanSummaryValueStyle" android:text="Rp 0"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_pesanan_header"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout style="@style/LaporanSummaryRowStyle">
+                <ImageView style="@style/LaporanSummaryIconStyle" android:src="@drawable/ic_nilai_pesanan" android:contentDescription="@string/nilai_pesanan_icon_desc"/>
+                <TextView style="@style/LaporanSummaryLabelStyle" android:text="@string/nilai_pesanan"/>
+                <TextView android:id="@+id/tvNilaiPesanan" style="@style/LaporanSummaryValueStyle" android:text="Rp 0"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LaporanSummaryRowStyle">
+                <ImageView style="@style/LaporanSummaryIconStyle" android:src="@drawable/ic_basket" android:contentDescription="@string/jumlah_pesanan_icon_desc"/>
+                <TextView style="@style/LaporanSummaryLabelStyle" android:text="@string/jumlah_pesanan"/>
+                <TextView android:id="@+id/tvJumlahPesanan" style="@style/LaporanSummaryValueStyle" android:text="0 Pesanan"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LaporanSummaryRowStyle">
+                <ImageView style="@style/LaporanSummaryIconStyle" android:src="@drawable/ic_pesanan_batal" android:contentDescription="@string/pesanan_batal_icon_desc"/>
+                <TextView style="@style/LaporanSummaryLabelStyle" android:text="@string/pesanan_batal"/>
+                <TextView android:id="@+id/tvPesananBatal" style="@style/LaporanSummaryValueStyle" android:text="0 Pesanan"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LaporanSummaryRowStyle" android:layout_marginBottom="24dp">
+                <ImageView style="@style/LaporanSummaryIconStyle" android:src="@drawable/ic_ceklis" android:contentDescription="@string/pesanan_selesai_icon_desc"/>
+                <TextView style="@style/LaporanSummaryLabelStyle" android:text="@string/pesanan_selesai"/>
+                <TextView android:id="@+id/tvPesananSelesai" style="@style/LaporanSummaryValueStyle" android:text="0 Pesanan"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daftar_pesanan_header"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewLaporanPesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_laporan_order_summary" /> <TextView
+            android:id="@+id/tvLaporanNoResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_results_found_laporan"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

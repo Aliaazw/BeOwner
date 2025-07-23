@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="16dp"
+    android:background="@drawable/circle_white"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvOrderCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_category_reguler"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvOrderNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTA-12202.190625.1"
+        android:textColor="@color/primary_blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/tvOrderCategory"
+        app:layout_constraintTop_toTopOf="@id/tvOrderCategory"
+        app:layout_constraintBottom_toBottomOf="@id/tvOrderCategory"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvOrderStatusTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_status_menunggu"
+        android:drawableStart="@drawable/ic_clock"
+        android:drawablePadding="4dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"
+        android:text="Menunggu Diproses"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Alia"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/basketIcon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderCategory" />
+
+    <ImageView
+        android:id="@+id/basketIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_basket"
+        android:contentDescription="@string/basket_icon_desc"
+        android:layout_marginStart="4dp"
+        app:tint="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalPrice"
+        app:layout_constraintStart_toEndOf="@id/tvTotalPrice"
+        app:layout_constraintTop_toTopOf="@id/tvTotalPrice"/>
+
+
+    <ImageView
+        android:id="@+id/dateIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_date"
+        app:tint="@color/dark_gray"
+        android:contentDescription="@string/date_icon_desc"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCustomerName"/>
+
+    <TextView
+        android:id="@+id/tvDateMasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_masuk_label_placeholder"
+        android:textColor="@color/dark_gray"
+        android:textSize="12sp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/dateIcon"
+        app:layout_constraintTop_toTopOf="@id/dateIcon"
+        app:layout_constraintBottom_toBottomOf="@id/dateIcon"/>
+
+    <TextView
+        android:id="@+id/tvEstSelesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/est_selesai_label_placeholder"
+        android:textColor="@color/red_error"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/bg_textview_rounded"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDateMasuk"/>
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 15.000"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvEstSelesai"
+        app:layout_constraintTop_toTopOf="@id/tvDateMasuk"/>
+
+    <TextView
+        android:id="@+id/tvPaymentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_status_belum_bayar"
+        android:textColor="@color/red_error"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalPrice"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

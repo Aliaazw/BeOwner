@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BeOwner</string>
+    <string name="nama_apk">BeOwner</string>
+    <string name="back_arrow_desc">Tombol Kembali</string>
+    <string name="profile_icon">Profil Icon</string>
+    <string name="notification_icon">Notifikasi</string>
+    <string name="ini_username">Owner</string>
+
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">Welcome </string>
+    <string name="invalid_username">Username tidak valid</string>
+    <string name="invalid_password">Password minimal 6 karakter</string>
+    <string name="login_failed">Login failed</string>
+    <string name="logo_canklin_desc">Canklin Logo</string>
+    <string name="slogan_canklin">BE OWNER FOR CLEAN</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="username_hint">username</string>
+    <string name="password_hint">password</string>
+    <string name="forgot_password_text">forgot password?</string>
+    <string name="signin_button_text">sign in</string>
+    <string name="signup_prompt_text">Don\'t have an account? Sign up</string>
+
+
+    <string name="create_account_text">Create Account</string>
+    <string name="confirm_password_hint">confirm password</string>
+    <string name="signup_button_text">Sign Up</string>
+
+
+    <string name="hari_ini">PESANAN HARI INI</string>
+    <string name="kiloan">Kiloan</string>
+    <string name="satuan">Satuan</string>
+    <string name="meteran">Meteran</string>
+    <string name="ini_ulasan">Ulasan</string>
+
+
+    <string name="tambah_pesanan">Tambah Pesanan</string>
+    <string name="cari_pesanan">Cari Pesanan</string>
+    <string name="laporan_perkembangan">Laporan Perkembangan</string>
+    <string name="edit_harga">Edit Harga</string>
+
+
+    <string name="nama_pelanggan_label">Nama Pelanggan</string>
+    <string name="no_handphone_label">No Handphone</string>
+    <string name="alamat_label">Alamat</string>
+    <string name="nama_pelanggan_hint">Nama Pelanggan</string>
+    <string name="no_handphone_hint">No Handphone</string>
+    <string name="alamat_hint">Alamat</string>
+    <string name="required_fields_note">*Nama dan no handphone wajib diisi, sedangkan alamat dapat dikosongkan jika tidak ada</string>
+    <string name="tambahkan_button">Tambahkan</string>
+    <string name="tambah_pesanan_title">Tambah pesanan</string>
+
+
+    <string name="pilih_durasi_title">Pilih Durasi</string>
+    <string name="durasi_reguler_title">Reguler</string>
+    <string name="durasi_reguler_desc">72 Jam</string>
+    <string name="durasi_ekspres_title">Ekspres</string>
+    <string name="durasi_ekspres_desc">24 Jam</string>
+    <string name="durasi_kilat_title">Kilat</string>
+    <string name="durasi_kilat_desc">6 Jam</string>
+    <string name="lanjut_button_text">LANJUT ></string>
+    <string name="total_layanan_label">Total Layanan</string>
+
+
+    <string name="tambahkan_layanan_title">Tambahkan Layanan</string>
+    <string name="cari_layanan_hint">Cari nama layanan</string>
+    <string name="catatan_jumlah_layanan">Tekan \'+\' untuk menambahkan layanan, untuk mengurangi jumlah layanan dengan mengklik secara langsung dapat di klik pada bagian angka</string>
+    <string name="next">LANJUT</string>
+
+
+    <string name="sample_service_name">Reguler - Satuan Selimut Double</string>
+    <string name="sample_service_price">Rp 20.000</string>
+    <string name="plus_sign">+</string>
+    <string name="minus_sign">-</string>
+    <string name="default_quantity">1</string>
+    <string name="add_service_button_desc">Tambah Layanan</string>
+    <string name="decrease_quantity_button_desc">Kurangi Jumlah</string>
+    <string name="increase_quantity_button_desc">Tambah Jumlah</string>
+
+
+    <string name="atur_pesanan_title">Atur Pesanan</string>
+    <string name="layanan_terpilih_label">Layanan Terpilih</string>
+    <string name="opsi_tambahan_label">Opsi Tambahan</string>
+    <string name="parfum_label">Parfum</string>
+    <string name="antar_jemput_label">Antar-Jemput</string>
+    <string name="diskon_label">Diskon</string>
+    <string name="catatan_label">Catatan</string>
+    <string name="catatan_hint">Tambahkan catatan khusus untuk pesanan ini</string>
+    <string name="buat_pesanan_button_text">Buat Pesanan</string>
+
+
+    <string name="pesanan_berhasil_title">Pesanan Berhasil Dibuat!</string>
+    <string name="pesanan_berhasil_message">Terima kasih atas pesanan Anda. Pesanan akan segera diproses.</string>
+    <string name="kembali_ke_dashboard_button_text">Kembali ke Dashboard</string>
+
+
+    <string name="logout_button_desc">Tombol Logout</string>
+
+
+    <string name="pesanan_screen_title">PESANAN</string>
+    <string name="cari_nama_nota_hint">Cari nama / nota</string>
+    <string name="add_order_button_desc">Tambah Pesanan Baru</string>
+    <string name="antrian_tab_text">Antrian</string>
+    <string name="siap_ambil_tab_text">Siap Ambil</string>
+    <string name="belum_bayar_tab_text">Belum Bayar</string>
+    <string name="no_results_found">Tidak ada pesanan ditemukan.</string>
+    <string name="search_prompt_text">Ketik untuk mencari pesanan.</string>
+    <string name="error_loading_results">Gagal memuat hasil pencarian.</string>
+
+
+    <string name="order_category_reguler">Reguler</string>
+    <string name="order_category_ekspres">Ekspres</string>
+    <string name="order_category_kilat">Kilat</string>
+    <string name="order_status_antrian">Antrian</string>
+    <string name="order_status_siap_ambil">Siap Ambil</string>
+    <string name="order_status_diproses">Diproses</string>
+    <string name="order_status_selesai">Selesai</string>
+    <string name="payment_status_belum_bayar">Belum Bayar</string>
+    <string name="payment_status_lunas">Lunas</string>
+    <string name="date_masuk_label">Masuk : </string>
+    <string name="est_selesai_label">Est Selesai : </string>
+    <string name="basket_icon_desc">Ikon Keranjang</string>
+    <string name="date_icon_desc">Ikon Tanggal</string>
+    <string name="date_masuk_label_placeholder">Tanggal Masuk</string>
+    <string name="est_selesai_label_placeholder">Estimasi Selesai</string>
+
+    <string-array name="parfum_options">
+        <item>Tidak ada</item>
+        <item>Mawar</item>
+        <item>Melati</item>
+        <item>Lavender</item>
+        <item>Ocean Fresh</item>
+    </string-array>
+
+    <string-array name="antar_jemput_options">
+        <item>Tidak</item>
+        <item>Ya (Biaya Tambahan)</item>
+    </string-array>
+
+    <string-array name="diskon_options">
+        <item>Tidak ada</item>
+        <item>Diskon 5%</item>
+        <item>Diskon 10%</item>
+        <item>Voucher A</item>
+    </string-array>
+
+    <string name="laporan">Isi Laporan</string>
+
+    <string name="edit_harga_title">Edit Harga</string>
+    <string name="simpan_harga_button_text">Simpan Perubahan Harga</string>
+
+    <string name="edit_icon_desc">Edit Layanan</string>
+    <string name="delete_icon_desc">Hapus Layanan</string>
+
+    <string name="rincian_pesanan_title">Rincian Pesanan</string>
+    <string name="pesanan_telah_siap">Pesanan Telah Siap</string>
+    <string name="batalkan_pesanan">Batalkan Pesanan</string>
+
+    <string name="date_masuk_label_placeholder_main">Masuk : DD/MM/YYYY - HH:MM</string>
+    <string name="order_status_antrian_main">Antrian</string>
+
+    <string name="laporan_title">LAPORAN</string>
+    <string name="saldo_kas">Saldo Kas</string>
+    <string name="total_pesanan_header">Total Pesanan</string>
+    <string name="nilai_pesanan">Nilai Pesanan</string>
+    <string name="jumlah_pesanan">Jumlah Pesanan</string>
+    <string name="pesanan_batal">Pesanan Batal</string>
+    <string name="pesanan_selesai">Pesanan Selesai</string>
+    <string name="daftar_pesanan_header">Daftar Pesanan</string>
+    <string name="no_results_found_laporan">Tidak ada data laporan ditemukan.</string>
+
+    <string name="saldo_kas_icon_desc">Ikon Saldo Kas</string>
+    <string name="nilai_pesanan_icon_desc">Ikon Nilai Pesanan</string>
+    <string name="jumlah_pesanan_icon_desc">Ikon Jumlah Pesanan</string>
+    <string name="pesanan_batal_icon_desc">Ikon Pesanan Batal</string>
+    <string name="pesanan_selesai_icon_desc">Ikon Pesanan Selesai</string>
+
+    <string name="pesanan_selesai_button_text">Pesanan Selesai</string>
+
+</resources>

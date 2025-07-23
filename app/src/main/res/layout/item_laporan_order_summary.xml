@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="16dp"
+    android:background="@drawable/circle_blue"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvCustomerNameLaporan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="nama"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvTotalPriceLaporan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <TextView
+        android:id="@+id/tvDateMasukLaporan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Masuk : 05/07/2025"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvCustomerNameLaporan"
+        app:layout_constraintTop_toBottomOf="@id/tvCustomerNameLaporan"/>
+
+    <TextView
+        android:id="@+id/tvDateSelesaiLaporan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Selesai : 05/07/2025"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvCustomerNameLaporan"
+        app:layout_constraintTop_toBottomOf="@id/tvDateMasukLaporan"/>
+
+    <TextView
+        android:id="@+id/tvTotalPriceLaporan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total : Rp.15.000"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCustomerNameLaporan"
+        app:layout_constraintBottom_toTopOf="@id/tvStatusLaporan"/>
+
+    <TextView
+        android:id="@+id/tvStatusLaporan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dibatalkan"
+        android:textColor="@color/primary_blue"
+        android:background="@drawable/circle_white"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalPriceLaporan"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="16dp"
+    android:background="@drawable/circle_white" android:layout_marginBottom="8dp" android:elevation="2dp" tools:ignore="SpUsage">
+
+    <TextView
+        android:id="@+id/tvServiceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Ekspres - Satuan Bed Cover Double"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/ivEdit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/tvServicePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 25.000"
+        android:textColor="@color/dark_blue"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@id/tvServiceName"
+        app:layout_constraintTop_toBottomOf="@id/tvServiceName" />
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_edit_layanan" android:contentDescription="@string/edit_icon_desc" app:layout_constraintEnd_toStartOf="@id/ivDelete" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:tint="@color/yellow_button" android:focusable="true" android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_delete" android:contentDescription="@string/delete_icon_desc" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" app:tint="@color/dark_gray" android:layout_marginStart="8dp" android:focusable="true" android:clickable="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

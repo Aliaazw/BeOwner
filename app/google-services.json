@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "730565662331",
+    "project_id": "beowner-2179f",
+    "storage_bucket": "beowner-2179f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730565662331:android:491b7527fc8356d423b4de",
+        "android_client_info": {
+          "package_name": "com.example.beowner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCqFVjJ3WkzVsnJsxP9oG-Hgmuas7SUMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
